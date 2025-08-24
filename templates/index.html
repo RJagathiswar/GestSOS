@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GestSOS</title>
+  <link rel="stylesheet" href="/static/css/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="/static/icon.png" alt="GestSOS Logo" />
+      <h1>GestSOS</h1>
+    </div>
+    <div class="theme-toggle">
+      <button id="toggleTheme">Toggle Theme</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="cards">
+      <div class="card">
+        <h2>Quick SOS</h2>
+        <p>Send alert to the nearest Police, Fire, or Ambulance based on your location.</p>
+        <div class="actions">
+          <button class="police" onclick="sendSOS('police')">🚓 Police</button>
+          <button class="fire" onclick="sendSOS('fire')">🚒 Fire</button>
+          <button class="ambulance" onclick="sendSOS('ambulance')">🚑 Ambulance</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Women Safety</h2>
+        <p>One-tap alert to Police and your fallback contact.</p>
+        <div class="actions">
+          <button class="women" onclick="sendSOS('women')">🛡️ Alert Police</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Gesture Mode</h2>
+        <p>Shake your phone 4 times to auto-send SOS. Cancel within 10s by shaking again.</p>
+        <div class="actions">
+          <button onclick="enableGesture()">📳 Enable Gesture</button>
+          <span id="gestureStatus" class="muted"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="camera">
+      <h3>Camera (optional)</h3>
+      <p>Allow camera so we can capture context frames if needed.</p>
+      <video id="preview" autoplay playsinline></video>
+      <div class="actions">
+        <button onclick="startCamera()">Enable Camera</button>
+        <button onclick="stopCamera()">Disable Camera</button>
+      </div>
+    </section>
+
+    <div id="toast" class="toast"></div>
+  </main>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
