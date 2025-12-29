@@ -44,6 +44,12 @@ The developer is **not responsible for any consequences** arising from the use o
 - **Environment:** Python Virtual Environment  
 
 ---
+
+![image url](https://github.com/RJagathiswar/GestSOS/blob/039c8141fa4870da6d421a79f07b03a968dfec63/WhatsApp%20Image%202025-11-24%20at%206.09.39%20PM.jpeg)
+![image url](https://github.com/RJagathiswar/GestSOS/blob/039c8141fa4870da6d421a79f07b03a968dfec63/WhatsApp%20Image%202025-11-24%20at%206.11.55%20PM.jpeg)
+![image url](https://github.com/RJagathiswar/GestSOS/blob/039c8141fa4870da6d421a79f07b03a968dfec63/WhatsApp%20Image%202025-11-24%20at%206.16.41%20PM.jpeg)
+
+
 ## Run
 
 python -m venv venv
